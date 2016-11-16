@@ -29,7 +29,13 @@ public class MainActivity extends AppCompatActivity {
         tabsView.setOnCheckedChangedListener(new TabsView.OnCheckedChangedListener() {
             @Override
             public void onChecked(int position) {
-                Toast.makeText(MainActivity.this,position+"",Toast.LENGTH_SHORT).show();
+
+            }
+        });
+        tabsView.setOnDoubleClickTabListener(new TabsView.OnDoubleClickTabListener() {
+            @Override
+            public void onDoubleClickTab(int position) {
+
             }
         });
 
