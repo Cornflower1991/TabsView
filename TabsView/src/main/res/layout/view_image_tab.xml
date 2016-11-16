@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/mainTab_height_big">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="4dp">
+
+        <ImageView
+            android:id="@+id/image_imageTabView_icon"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/text_imageTabView_name"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:gravity="center"
+            android:textSize="10dp"
+            tools:ignore="SpUsage"
+            tools:text="推荐" />
+    </LinearLayout>
+
+    <com.cornflower1991.tabsView_lib.RedDotView
+        android:id="@+id/redDot_imageTabView_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/mainTab_marginTop"/>
+</FrameLayout>

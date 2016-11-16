@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TabsView</string>
+
+
+    <string name="tab_recommend">首页</string>
+    <string name="tab_game">推荐</string>
+    <string name="tab_software">我的</string>
+</resources>

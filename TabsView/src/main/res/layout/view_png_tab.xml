@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cornflower1991.tabsView_lib.RippleLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_imageTabPngView_ripple"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <com.cornflower1991.tabsView_lib.BottomTabSelected
+            android:id="@+id/bottom_imageTabView_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:id="@+id/layout_imageTabView_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="4dp">
+
+            <ImageView
+                android:id="@+id/image_imageTabView_icon"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="2dp"
+                />
+
+            <TextView
+                android:id="@+id/text_imageTabView_name"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:gravity="center"
+                android:textSize="10dp"
+                tools:ignore="SpUsage"
+                tools:text="推荐" />
+        </LinearLayout>
+
+        <com.cornflower1991.tabsView_lib.RedDotView
+            android:id="@+id/redDot_imageTabView_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            />
+    </FrameLayout>
+</com.cornflower1991.tabsView_lib.RippleLayout>
